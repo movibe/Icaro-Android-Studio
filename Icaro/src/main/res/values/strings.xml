@@ -2,8 +2,15 @@
 <resources>
 
     <string name="app_name">Icaro Dev</string>
+
     <string name="action_settings">Ajustes</string>
+    <string name="acerca_de">Acerca de</string>
+
     <string name="hello_world">Hello world!</string>
+    <string name="modo_ciego">Modo Ciego</string>
+    <string name="ex_modo_ciego">Activar para personas con discapacidad visual</string>
+
+    <string name="aceptar">Aceptar</string>
 
     <string name="version">Version de Desarrollo 00</string>
     <string name="comentario_version">Version para inestable del software, para pruebas de funcionalidades</string>

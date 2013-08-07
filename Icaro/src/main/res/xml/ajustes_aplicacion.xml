@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+            android:title="@string/modo_ciego"
+            android:key="ModoCiego"
+            android:selectable="true"
+            android:summary="@string/ex_modo_ciego"
+            android:defaultValue="false"/>
+</PreferenceScreen>

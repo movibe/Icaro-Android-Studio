@@ -1,8 +1,10 @@
 package m.zapata.icaro;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 public class MainActivity extends Activity {
 
@@ -19,5 +21,20 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, ManejoPreferencias.class);
+                startActivityForResult(intent, 0);
+                return true;
+
+            case R.id.acerca_de:
+                /* TODO: establecer mensaje "Acerca de" */
+                return true;
+        }
+        return (super.onOptionsItemSelected(item));
+    }
 }
