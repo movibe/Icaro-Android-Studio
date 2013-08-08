@@ -15,6 +15,7 @@ public class ManejoPreferencias extends PreferenceActivity implements SharedPref
         super.onCreate(savedInstanceState);
         getFragmentManager().beginTransaction().replace(android.R.id.content, new Preferencias()).commit();
         PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
+        this.getActionBar().setIcon(R.drawable.action_settings);
     }
 
     @Override

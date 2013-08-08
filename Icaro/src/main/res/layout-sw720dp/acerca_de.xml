@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e2dfea">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/icono_aplicacion"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitXY"
+            android:minHeight="260dp"
+            android:minWidth="260dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/t_NombreAplicacion"
+            android:textSize="60dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:layout_alignTop="@id/icono_aplicacion"
+            android:layout_toRightOf="@id/icono_aplicacion"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:id="@id/t_Version"
+            android:textSize="33dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_below="@id/t_NombreAplicacion"
+            android:layout_toRightOf="@id/icono_aplicacion"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/build"
+            android:id="@id/t_Build"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="clip_vertical"
+            android:textSize="28dp"
+            android:phoneNumber="false"
+            android:typeface="sans"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/comentario_version"
+            android:id="@id/t_Comentario"
+            android:singleLine="false"
+            android:textSize="35dp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_above="@id/t_Build"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="40dp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mail"
+            android:id="@id/t_Mail"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:layout_below="@id/t_NombreDesarrollador"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/desarrollado_por"
+            android:id="@id/t_NombreDesarrollador"
+            android:textSize="35dp"
+            android:typeface="normal"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@id/icono_aplicacion"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/twitter"
+            android:id="@id/t_Twitter"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:layout_below="@id/t_Mail"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>

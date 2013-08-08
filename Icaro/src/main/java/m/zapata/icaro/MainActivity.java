@@ -29,11 +29,12 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, ManejoPreferencias.class);
                 startActivityForResult(intent, 0);
-                return true;
+                break;
 
             case R.id.acerca_de:
-                /* TODO: establecer mensaje "Acerca de" */
-                return true;
+                Dialogo_AcercaDe acercaDe = new Dialogo_AcercaDe(this);
+                acercaDe.show();
+                break;
         }
         return (super.onOptionsItemSelected(item));
     }

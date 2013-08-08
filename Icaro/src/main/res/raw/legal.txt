@@ -1,0 +1,8 @@
+Software con licencia GNU General Public License, version 2,
+y con licencia Creative Commons.
+
+La presente version es unicamente para pruebas y testeo de funcionalidades,
+dado que corresponde a una version en desarrollo.
+No se recomienda aun su uso para el dia a dia.
+
+
