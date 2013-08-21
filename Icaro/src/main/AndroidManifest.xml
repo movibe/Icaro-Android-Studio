@@ -4,8 +4,8 @@
     android:versionCode="00"
     android:versionName="00.210713-dev02">
 
-<uses-sdk
-        android:minSdkVersion="14"
+    <uses-sdk
+            android:minSdkVersion="14"
         android:targetSdkVersion="16" />
 
     <application
