@@ -110,7 +110,6 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
                         .show();
             }
         }
-
     }
 
     @Override
