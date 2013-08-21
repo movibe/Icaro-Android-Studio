@@ -38,14 +38,7 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f985e394-990f-44d3-9440-ffd8a80e6f16" name="Default" comment="Implementados botones de ActionBar (Busqueda y microfono)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/Icaro.iml" afterPath="$PROJECT_DIR$/Icaro/Icaro.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Proyecto Icaro.iml" afterPath="$PROJECT_DIR$/Proyecto Icaro.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/acerca_de.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/acerca_de.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" />
+    <list default="true" id="f985e394-990f-44d3-9440-ffd8a80e6f16" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Icaro.iws" />
@@ -116,10 +109,10 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="1" selection-start="4160" selection-end="4160" vertical-scroll-proportion="0.91847825" vertical-offset="1143" max-vertical-offset="1755">
+            <state line="119" column="1" selection-start="4134" selection-end="4134" vertical-scroll-proportion="0.9218182" vertical-offset="1143" max-vertical-offset="1755">
               <folding>
-                <element signature="e#3523#3966#0" expanded="true" />
-                <element signature="e#3939#3940#0" expanded="true" />
+                <element signature="e#3497#3940#0" expanded="true" />
+                <element signature="e#3913#3914#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,7 +130,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+            <state line="12" column="13" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
@@ -218,8 +211,8 @@
         <option value="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw720dp/acerca_de.xml" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/acerca_de.xml" />
-        <option value="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -917,7 +910,11 @@
       <created>1376508220775</created>
       <updated>1376508220775</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implementada primera parte del TTS&#10;Manejo de mensajes en caso que no se encuentre instalado&#10;&#10;Se incluye base del Icaro Engine">
+      <created>1377102246434</created>
+      <updated>1377102246434</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -986,7 +983,8 @@
     <MESSAGE value="Implementado &quot;Acerca De&quot;" />
     <MESSAGE value="Leve modificacion a layout &quot;Acerca de&quot; para configuracion sw320" />
     <MESSAGE value="Implementados botones de ActionBar (Busqueda y microfono)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementados botones de ActionBar (Busqueda y microfono)" />
+    <MESSAGE value="Implementada primera parte del TTS&#10;Manejo de mensajes en caso que no se encuentre instalado&#10;&#10;Se incluye base del Icaro Engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementada primera parte del TTS&#10;Manejo de mensajes en caso que no se encuentre instalado&#10;&#10;Se incluye base del Icaro Engine" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1128,10 +1126,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="1" selection-start="4160" selection-end="4160" vertical-scroll-proportion="0.91847825" vertical-offset="1143" max-vertical-offset="1755">
+        <state line="119" column="1" selection-start="4134" selection-end="4134" vertical-scroll-proportion="0.9218182" vertical-offset="1143" max-vertical-offset="1755">
           <folding>
-            <element signature="e#3523#3966#0" expanded="true" />
-            <element signature="e#3939#3940#0" expanded="true" />
+            <element signature="e#3497#3940#0" expanded="true" />
+            <element signature="e#3913#3914#0" expanded="true" />
           </folding>
         </state>
       </provider>
