@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -21,11 +22,16 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     private static final int VOICE_DATA_CHECK_CODE = 0;
     private static TextToSpeech TTS;
 
+    private static TextView peticionIngresada;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        peticionIngresada = (TextView) findViewById(R.id.peticionIngresada);
+        //peticionIngresada.setVisibility(View.GONE);
     }
 
 
