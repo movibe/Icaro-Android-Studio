@@ -23,6 +23,7 @@
     <string name="ex_modo_ciego">Activar para personas con discapacidad visual</string>
     <string name="busqueda_voz">Cual es su peticion?</string>
 
+
     <string name="instalacion_tts">Se ha detectado que su dispositivo no cuenta con los archivos
         para el reconocimiento de voz,
         a continuacion sera llevado a la tienda Google Play para que realize la descarga de los
@@ -33,5 +34,13 @@
     <string name="aceptar">Aceptar</string>
     <string name="cancelar">Cancelar</string>
 
+    <string name="error_tts">Lo lamento, ha fallado el reconocimiento =(</string>
+    <string name="error_audio">Lo lamento, ha ocurrido un error con el audio capturado</string>
+    <string name="error_audio_red_datos">Lo lamento, hay problemas en la red de datos o WIFI de su
+        dispositivo
+    </string>
+    <string name="error_audio_servidor">Lo lamento, hay problemas con el acceso a los servidores de
+        Google
+    </string>
 
 </resources>

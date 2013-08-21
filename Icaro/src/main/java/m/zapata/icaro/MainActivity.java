@@ -7,11 +7,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.SearchView;
+import android.widget.Toast;
+
+import java.util.Locale;
 
 public class MainActivity extends Activity implements TextToSpeech.OnInitListener {
+    Locale Español = new Locale("spa");
     private static final int REQUEST_CODE = 1000;
     private static final int VOICE_DATA_CHECK_CODE = 0;
     private static TextToSpeech TTS;
@@ -109,11 +114,41 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
                         .setNegativeButton(R.string.cancelar, null)
                         .show();
             }
+
+        } else if (resultCode == RecognizerIntent.RESULT_AUDIO_ERROR) {
+            Log.e("Icaro", "Audio Error");
+            Toast.makeText(this, R.string.error_audio, Toast.LENGTH_LONG).show();
+
+        } else if (resultCode == RecognizerIntent.RESULT_CLIENT_ERROR) {
+            Log.e("Icaro", "Audio Error");
+            Toast.makeText(this, R.string.error_audio, Toast.LENGTH_LONG).show();
+
+        } else if (resultCode == RecognizerIntent.RESULT_NETWORK_ERROR) {
+            Log.e("Icaro", "Network Error");
+            Toast.makeText(this, R.string.error_audio_red_datos, Toast.LENGTH_LONG).show();
+
+        } else if (resultCode == RecognizerIntent.RESULT_SERVER_ERROR) {
+            Log.e("Icaro", "Server Error");
+            Toast.makeText(this, R.string.error_audio_servidor, Toast.LENGTH_LONG).show();
         }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
     public void onInit(int status) {
+        if (status == TextToSpeech.SUCCESS) {
+            if (TTS.isLanguageAvailable(Español) == TextToSpeech.LANG_AVAILABLE) ;
+            TTS.setLanguage(Español);
+        } else if (status == TextToSpeech.ERROR) {
+            Toast.makeText(this, R.string.error_tts, Toast.LENGTH_LONG).show();
+        }
+    }
 
+    @Override
+    protected void onDestroy() {
+        if (TTS != null) {
+            TTS.shutdown();
+        }
+        super.onDestroy();
     }
 }

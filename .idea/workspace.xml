@@ -39,6 +39,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f985e394-990f-44d3-9440-ffd8a80e6f16" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Icaro.iws" />
@@ -109,10 +111,10 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="1" selection-start="4134" selection-end="4134" vertical-scroll-proportion="0.9218182" vertical-offset="1143" max-vertical-offset="1755">
+            <state line="131" column="71" selection-start="4978" selection-end="4978" vertical-scroll-proportion="2.8" vertical-offset="230" max-vertical-offset="2220">
               <folding>
-                <element signature="e#3497#3940#0" expanded="true" />
-                <element signature="e#3913#3914#0" expanded="true" />
+                <element signature="e#3617#4060#0" expanded="true" />
+                <element signature="e#4033#4034#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +132,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+            <state line="38" column="0" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -914,7 +916,15 @@
       <created>1377102246434</created>
       <updated>1377102246434</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implementada primera parte del TTS&#10;Manejo de mensajes en caso que no se encuentre instalado&#10;&#10;Se incluye base del Icaro Engine">
+      <created>1377102339411</created>
+      <updated>1377102339411</updated>
+    </task>
+    <task id="LOCAL-00008" summary="espacio">
+      <created>1377102464303</created>
+      <updated>1377102464303</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -942,12 +952,12 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8068376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80617493" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6213115" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80617493" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24695122" sideWeight="0.26153848" order="3" side_tool="true" content_ui="tabs" />
@@ -958,7 +968,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24695122" sideWeight="0.6723842" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24695122" sideWeight="0.19382504" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -984,7 +994,8 @@
     <MESSAGE value="Leve modificacion a layout &quot;Acerca de&quot; para configuracion sw320" />
     <MESSAGE value="Implementados botones de ActionBar (Busqueda y microfono)" />
     <MESSAGE value="Implementada primera parte del TTS&#10;Manejo de mensajes en caso que no se encuentre instalado&#10;&#10;Se incluye base del Icaro Engine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementada primera parte del TTS&#10;Manejo de mensajes en caso que no se encuentre instalado&#10;&#10;Se incluye base del Icaro Engine" />
+    <MESSAGE value="espacio" />
+    <option name="LAST_COMMIT_MESSAGE" value="espacio" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1119,17 +1130,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+        <state line="38" column="0" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="1" selection-start="4134" selection-end="4134" vertical-scroll-proportion="0.9218182" vertical-offset="1143" max-vertical-offset="1755">
+        <state line="131" column="71" selection-start="4978" selection-end="4978" vertical-scroll-proportion="2.8" vertical-offset="230" max-vertical-offset="2220">
           <folding>
-            <element signature="e#3497#3940#0" expanded="true" />
-            <element signature="e#3913#3914#0" expanded="true" />
+            <element signature="e#3617#4060#0" expanded="true" />
+            <element signature="e#4033#4034#0" expanded="true" />
           </folding>
         </state>
       </provider>
