@@ -11,8 +11,8 @@
             android:id="@id/icono_aplicacion"
             android:src="@drawable/ic_launcher"
             android:scaleType="fitXY"
-            android:minHeight="150dp"
-            android:minWidth="150dp"
+            android:minHeight="170dp"
+            android:minWidth="170dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="30dp"/>

@@ -38,13 +38,13 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f985e394-990f-44d3-9440-ffd8a80e6f16" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/busqueda.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/busqueda.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw600dp/busqueda.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw720dp/busqueda.xml" />
+    <list default="true" id="f985e394-990f-44d3-9440-ffd8a80e6f16" name="Default" comment="Implementados botones de ActionBar (Busqueda y microfono)">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/Icaro.iml" afterPath="$PROJECT_DIR$/Icaro/Icaro.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/res/menu/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Proyecto Icaro.iml" afterPath="$PROJECT_DIR$/Proyecto Icaro.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/acerca_de.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/acerca_de.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -65,6 +65,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -101,33 +102,34 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="Icaro" />
+    <favorites_list name="Icaro">
+      <favorite_root url="file://$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="18" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.48087433" vertical-offset="321" max-vertical-offset="870">
-              <folding />
+            <state line="120" column="1" selection-start="4160" selection-end="4160" vertical-scroll-proportion="0.91847825" vertical-offset="1143" max-vertical-offset="1755">
+              <folding>
+                <element signature="e#3523#3966#0" expanded="true" />
+                <element signature="e#3939#3940#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/menu/main.xml">
+      <file leaf-file-name="Dialogo_AcercaDe.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/Dialogo_AcercaDe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="9" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding>
-                <element signature="e#148#166#0" expanded="true" />
-                <element signature="e#707#732#0" expanded="true" />
-              </folding>
+            <state line="10" column="26" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,28 +137,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManejoPreferencias.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/ManejoPreferencias.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="64" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="acerca_de.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/acerca_de.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="0" selection-end="3824" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1560">
+            <state line="12" column="13" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -216,19 +197,16 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1375809960067" />
+        <entry key="$PROJECT_DIR$" value="1375892536541" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/Preferencias.java" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/layout/acerca_de.xml" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/raw/legal.txt" />
-        <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/acerca_de.xml" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw600dp/acerca_de.xml" />
-        <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw720dp/acerca_de.xml" />
         <option value="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/ManejoPreferencias.java" />
         <option value="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/Dialogo_AcercaDe.java" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/acerca_de.xml" />
@@ -236,9 +214,12 @@
         <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/busqueda.xml" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw600dp/busqueda.xml" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw720dp/busqueda.xml" />
+        <option value="$PROJECT_DIR$/Icaro/src/main/res/menu/main.xml" />
+        <option value="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" />
+        <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw720dp/acerca_de.xml" />
+        <option value="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/acerca_de.xml" />
         <option value="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" />
         <option value="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/Icaro/src/main/res/menu/main.xml" />
       </list>
     </option>
   </component>
@@ -293,6 +274,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -699,10 +681,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Icaro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto Icaro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Icaro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IcaroEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -712,9 +723,9 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="Errors" />
+    <property name="options.lastSelected" value="preferences.general" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Icaro/build" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="OBS4GMLJJ7WKEYJF" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="BX902XS79N" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="3.4Pulgadas" />
@@ -902,7 +913,11 @@
       <created>1376337071166</created>
       <updated>1376337071166</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implementados botones de ActionBar (Busqueda y microfono)">
+      <created>1376508220775</created>
+      <updated>1376508220775</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -930,27 +945,28 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8072289" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8068376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3620427" sideWeight="0.6712329" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6232877" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6213115" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.42636988" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24695122" sideWeight="0.26153848" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32649574" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62134254" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23780487" sideWeight="0.6735395" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32646048" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24695122" sideWeight="0.6723842" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3620427" sideWeight="0.6712329" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -963,84 +979,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leve modificacion a layout &quot;Acerca de&quot; para configuracion sw320" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Implementado Ajustes de aplicacion&#10;Base para dialogo Acerca de" />
     <MESSAGE value="Implementado &quot;Acerca De&quot;" />
     <MESSAGE value="Leve modificacion a layout &quot;Acerca de&quot; para configuracion sw320" />
+    <MESSAGE value="Implementados botones de ActionBar (Busqueda y microfono)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementados botones de ActionBar (Busqueda y microfono)" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw600dp/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="508">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/raw/legal.txt">
@@ -1048,145 +1010,129 @@
         <state line="8" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw720dp/acerca_de.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="32" selection-start="3641" selection-end="3641" vertical-scroll-proportion="2.746063" vertical-offset="0" max-vertical-offset="1545">
-          <folding>
-            <element signature="e#1043#1061#0" expanded="false" />
-            <element signature="e#1320#1337#0" expanded="false" />
-            <element signature="e#1750#1765#0" expanded="false" />
-            <element signature="e#2201#2229#0" expanded="false" />
-            <element signature="e#2706#2720#0" expanded="false" />
-            <element signature="e#3081#3107#0" expanded="false" />
-            <element signature="e#3552#3569#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw600dp/acerca_de.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="17" selection-start="0" selection-end="3798" vertical-scroll-proportion="0.9409449" vertical-offset="977" max-vertical-offset="1545">
-          <folding>
-            <element signature="e#1043#1061#0" expanded="false" />
-            <element signature="e#1320#1337#0" expanded="false" />
-            <element signature="e#1750#1765#0" expanded="false" />
-            <element signature="e#2201#2229#0" expanded="false" />
-            <element signature="e#2706#2720#0" expanded="false" />
-            <element signature="e#3081#3107#0" expanded="false" />
-            <element signature="e#3552#3569#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/acerca_de.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="13" selection-start="2958" selection-end="2958" vertical-scroll-proportion="0.32086614" vertical-offset="977" max-vertical-offset="1545">
-          <folding>
-            <element signature="e#1043#1061#0" expanded="false" />
-            <element signature="e#1320#1337#0" expanded="false" />
-            <element signature="e#1750#1765#0" expanded="false" />
-            <element signature="e#2201#2229#0" expanded="false" />
-            <element signature="e#2706#2720#0" expanded="false" />
-            <element signature="e#3081#3107#0" expanded="false" />
-            <element signature="e#3552#3569#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/Dialogo_AcercaDe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="208" selection-end="208" vertical-scroll-proportion="0.19160584" vertical-offset="0" max-vertical-offset="548">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/ManejoPreferencias.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="64" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/acerca_de.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="0" selection-end="3824" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw720dp/busqueda.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="62" selection-start="431" selection-end="431" vertical-scroll-proportion="-4.21875" vertical-offset="0" max-vertical-offset="225">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw600dp/busqueda.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw600dp/busqueda.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="62" selection-start="431" selection-end="431" vertical-scroll-proportion="0.26112187" vertical-offset="0" max-vertical-offset="517">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/busqueda.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="62" selection-start="431" selection-end="431" vertical-scroll-proportion="0.26112187" vertical-offset="0" max-vertical-offset="517">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/busqueda.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/busqueda.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="62" selection-start="40" selection-end="431" vertical-scroll-proportion="0.26112187" vertical-offset="0" max-vertical-offset="517">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="9" selection-start="826" selection-end="826" vertical-scroll-proportion="0.6010929" vertical-offset="0" max-vertical-offset="549">
+          <folding>
+            <element signature="e#148#166#0" expanded="false" />
+            <element signature="e#705#730#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.23396881" vertical-offset="0" max-vertical-offset="577" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/acerca_de.xml">
+      <provider editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="0" selection-end="3824" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/ManejoPreferencias.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="64" selection-start="747" selection-end="747" vertical-scroll-proportion="0.24610052" vertical-offset="68" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/acerca_de.xml">
+      <provider editor-type-id="text-editor">
+        <state line="76" column="13" selection-start="2958" selection-end="2958" vertical-scroll-proportion="0.0" vertical-offset="977" max-vertical-offset="1545">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw600dp/acerca_de.xml">
+      <provider editor-type-id="text-editor">
+        <state line="97" column="17" selection-start="0" selection-end="3798" vertical-scroll-proportion="0.0" vertical-offset="977" max-vertical-offset="1545">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw720dp/acerca_de.xml">
+      <provider editor-type-id="text-editor">
+        <state line="93" column="32" selection-start="3641" selection-end="3641" vertical-scroll-proportion="0.0" vertical-offset="1028" max-vertical-offset="1545">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/Dialogo_AcercaDe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="26" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+        <state line="12" column="13" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/menu/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="9" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="e#148#166#0" expanded="true" />
-            <element signature="e#707#732#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="18" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.48087433" vertical-offset="321" max-vertical-offset="870">
-          <folding />
+        <state line="120" column="1" selection-start="4160" selection-end="4160" vertical-scroll-proportion="0.91847825" vertical-offset="1143" max-vertical-offset="1755">
+          <folding>
+            <element signature="e#3523#3966#0" expanded="true" />
+            <element signature="e#3939#3940#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

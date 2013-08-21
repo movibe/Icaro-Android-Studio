@@ -3,7 +3,7 @@
 
     <string name="app_name">Icaro Dev</string>
     <string name="version">Version de Desarrollo 00</string>
-    <string name="build">build 00.6-08-13.dev01</string>
+    <string name="build">build 00.60813.dev01</string>
 
     <string name="desarrollado_por">Desarrollado por Miguel A. Zapata</string>
     <string name="mail">miguelo.zapata@gmail.com</string>
@@ -21,11 +21,17 @@
     <string name="hello_world">Hello world!</string>
     <string name="modo_ciego">Modo Ciego</string>
     <string name="ex_modo_ciego">Activar para personas con discapacidad visual</string>
+    <string name="busqueda_voz">Cual es su peticion?</string>
 
+    <string name="instalacion_tts">Se ha detectado que su dispositivo no cuenta con los archivos
+        para el reconocimiento de voz,
+        a continuacion sera llevado a la tienda Google Play para que realize la descarga de los
+        archivos nesesarios para la aplicacion.
+    </string>
+
+    <string name="atencion">Atencion</string>
     <string name="aceptar">Aceptar</string>
-
-
-
+    <string name="cancelar">Cancelar</string>
 
 
 </resources>
