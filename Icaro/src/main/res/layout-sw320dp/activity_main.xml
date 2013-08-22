@@ -12,12 +12,16 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cual es la hora en asdf sad asiasfi asidaiai asiaisfaisgi asiiaida ifaisaifa"
+            android:text="Cual es la hora"
             android:id="@+id/peticionIngresada"
+            android:ellipsize="marquee"
             android:background="#009eff"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:textSize="15dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="17dp"
             android:textIsSelectable="false"
             android:layout_alignParentEnd="false"
             android:layout_marginLeft="0dp"
@@ -26,7 +30,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:scrollHorizontally="true"
-            android:singleLine="true"/>
-
+            android:singleLine="true"
+            android:textColor="#e3e9de"/>
 
 </RelativeLayout>

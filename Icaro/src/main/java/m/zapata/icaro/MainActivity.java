@@ -14,6 +14,7 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 public class MainActivity extends Activity implements TextToSpeech.OnInitListener {
@@ -31,7 +32,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         setContentView(R.layout.activity_main);
 
         peticionIngresada = (TextView) findViewById(R.id.peticionIngresada);
-        //peticionIngresada.setVisibility(View.GONE);
+        peticionIngresada.setVisibility(TextView.INVISIBLE);
     }
 
 
@@ -41,7 +42,6 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         getMenuInflater().inflate(R.menu.main, menu);
 
         SearchView searchView = (SearchView) menu.findItem(R.id.action_busqueda).getActionView();
-        //TODO: SetQueryHint con Android Resource
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -120,23 +120,37 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
                         .setNegativeButton(R.string.cancelar, null)
                         .show();
             }
+        }
 
-        } else if (resultCode == RecognizerIntent.RESULT_AUDIO_ERROR) {
+        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
+            ArrayList<String> matches = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+            //SearchView.setQuery(matches.get(0), false);
+            //ejecutarEngine(matches.get(0));
+            peticionIngresada.setText(matches.get(0));
+            peticionIngresada.setVisibility(TextView.VISIBLE);
+            Log.d("String Voz", matches.get(0));
+        }
+
+        if (resultCode == RecognizerIntent.RESULT_AUDIO_ERROR) {
             Log.e("Icaro", "Audio Error");
             Toast.makeText(this, R.string.error_audio, Toast.LENGTH_LONG).show();
+        }
 
-        } else if (resultCode == RecognizerIntent.RESULT_CLIENT_ERROR) {
+        if (resultCode == RecognizerIntent.RESULT_CLIENT_ERROR) {
             Log.e("Icaro", "Audio Error");
             Toast.makeText(this, R.string.error_audio, Toast.LENGTH_LONG).show();
+        }
 
-        } else if (resultCode == RecognizerIntent.RESULT_NETWORK_ERROR) {
+        if (resultCode == RecognizerIntent.RESULT_NETWORK_ERROR) {
             Log.e("Icaro", "Network Error");
             Toast.makeText(this, R.string.error_audio_red_datos, Toast.LENGTH_LONG).show();
+        }
 
-        } else if (resultCode == RecognizerIntent.RESULT_SERVER_ERROR) {
+        if (resultCode == RecognizerIntent.RESULT_SERVER_ERROR) {
             Log.e("Icaro", "Server Error");
             Toast.makeText(this, R.string.error_audio_servidor, Toast.LENGTH_LONG).show();
         }
+
         super.onActivityResult(requestCode, resultCode, data);
     }
 
