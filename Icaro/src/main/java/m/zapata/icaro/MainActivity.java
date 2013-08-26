@@ -41,10 +41,15 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
 
-        SearchView searchView = (SearchView) menu.findItem(R.id.action_busqueda).getActionView();
+
+        final MenuItem menuBusqueda = menu.findItem(R.id.action_busqueda);
+        SearchView searchView = (SearchView) menuBusqueda.getActionView();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+                peticionIngresada.setText(query);
+                peticionIngresada.setVisibility(TextView.VISIBLE);
+                menuBusqueda.collapseActionView();
                 ejecutarEngine(query);
                 return false;
             }

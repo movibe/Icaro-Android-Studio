@@ -4,7 +4,7 @@
             android:title="@string/busqueda"
             android:icon="@drawable/action_search"
             android:actionLayout="@layout/busqueda"
-            android:showAsAction="always"
+            android:showAsAction="always|collapseActionView"
             android:actionViewClass="android.widget.SearchView"/>
 
     <item
