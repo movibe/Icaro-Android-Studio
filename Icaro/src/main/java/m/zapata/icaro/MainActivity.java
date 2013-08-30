@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
@@ -14,17 +15,19 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.Normalizer;
+import java.text.Normalizer.Form;
 import java.util.ArrayList;
 import java.util.Locale;
 
 public class MainActivity extends Activity implements TextToSpeech.OnInitListener {
     Locale Español = new Locale("spa");
+    Boolean EstadoEjecucion = false;
+
     private static final int REQUEST_CODE = 1000;
     private static final int VOICE_DATA_CHECK_CODE = 0;
     private static TextToSpeech TTS;
-
     private static TextView peticionIngresada;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,10 +100,6 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         startActivityForResult(intentGoogleVoice, REQUEST_CODE);
     }
 
-    private void ejecutarEngine(String peticion) {
-
-    }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -130,9 +129,10 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
             ArrayList<String> matches = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
             //SearchView.setQuery(matches.get(0), false);
-            //ejecutarEngine(matches.get(0));
+
             peticionIngresada.setText(matches.get(0));
             peticionIngresada.setVisibility(TextView.VISIBLE);
+            ejecutarEngine(matches.get(0));
             Log.d("String Voz", matches.get(0));
         }
 
@@ -175,5 +175,20 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
             TTS.shutdown();
         }
         super.onDestroy();
+    }
+
+    private void ejecutarEngine(String peticion) {
+        peticion = Normalizer.normalize(peticion, Form.NFD);
+        peticion = peticion.replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
+
+        BackgroundTask taskPrincipal = new BackgroundTask(this);
+        try {
+            EstadoEjecucion = taskPrincipal.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR).get();
+
+        } catch (Exception e) {
+            Log.e("Icaro", "Error en ejecucion task principal");
+            Log.e("Icaro", Log.getStackTraceString(e));
+        }
+        Toast.makeText(this, "ejecucion task principal correcta", Toast.LENGTH_SHORT).show();
     }
 }
