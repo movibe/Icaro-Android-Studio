@@ -1,0 +1,18 @@
+modelo base engine parser
+
+@SuppressWarnings({ "all", "warnings", "unchecked", "unused", "cast" })
+public class IcaroEngineParser extends Parser {
+	Activity mActivity;
+	LayoutInflater mInflater;
+	View mView;
+
+	......
+	......
+
+
+	public final IcaroContext icaro(MainActivity mainActivity,
+			LayoutInflater inflater, View view) throws RecognitionException {
+
+		mActivity = mainActivity;
+		mInflater = inflater;
+		mView = view;

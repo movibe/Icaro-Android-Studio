@@ -1,5 +1,6 @@
 package m.zapata.icaro;
 
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,8 +10,10 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,14 +31,17 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     private static final int VOICE_DATA_CHECK_CODE = 0;
     private static TextToSpeech TTS;
     private static TextView peticionIngresada;
+    public static View VistaUI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        VistaUI = findViewById(R.id.VistaUI);
         peticionIngresada = (TextView) findViewById(R.id.peticionIngresada);
         peticionIngresada.setVisibility(TextView.INVISIBLE);
+
     }
 
 
@@ -178,10 +184,15 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     }
 
     private void ejecutarEngine(String peticion) {
-        peticion = Normalizer.normalize(peticion, Form.NFD);
-        peticion = peticion.replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
+        peticion.toLowerCase();
 
-        BackgroundTask taskPrincipal = new BackgroundTask(this);
+        String peticionModificada = Normalizer.normalize(peticion, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
+
+        LayoutInflater inflater;
+        inflater = getLayoutInflater();
+
+
+        BackgroundTask taskPrincipal = new BackgroundTask(this, inflater, VistaUI, peticionModificada);
         try {
             EstadoEjecucion = taskPrincipal.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR).get();
 

@@ -24,4 +24,6 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:13.0.+'
+    compile files('libs/antlr-4.0-complete.jar')
+
 }

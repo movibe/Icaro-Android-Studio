@@ -33,4 +33,12 @@
             android:singleLine="true"
             android:textColor="#e3e9de"/>
 
+    <View
+            android:id="@+id/VistaUI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/peticionIngresada"/>
+
 </RelativeLayout>
