@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
@@ -18,17 +17,24 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.antlr.v4.runtime.ANTLRInputStream;
+import org.antlr.v4.runtime.CommonTokenStream;
+
 import java.text.Normalizer;
 import java.text.Normalizer.Form;
 import java.util.ArrayList;
 import java.util.Locale;
 
+import IcaroEngine.EngineLexer;
+import IcaroEngine.EngineParser;
+
 public class MainActivity extends Activity implements TextToSpeech.OnInitListener {
+
     Locale Español = new Locale("spa");
-    Boolean EstadoEjecucion = false;
 
     private static final int REQUEST_CODE = 1000;
     private static final int VOICE_DATA_CHECK_CODE = 0;
+
     private static TextToSpeech TTS;
     private static TextView peticionIngresada;
     public static View VistaUI;
@@ -184,22 +190,16 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     }
 
     private void ejecutarEngine(String peticion) {
-        peticion.toLowerCase();
-
-        String peticionModificada = Normalizer.normalize(peticion, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
-
         LayoutInflater inflater;
         inflater = getLayoutInflater();
 
+        peticion.toLowerCase();
+        peticion = Normalizer.normalize(peticion, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
 
-        BackgroundTask taskPrincipal = new BackgroundTask(this, inflater, VistaUI, peticionModificada);
-        try {
-            EstadoEjecucion = taskPrincipal.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR).get();
+        EngineLexer lexer = new EngineLexer(new ANTLRInputStream(peticion));
+        EngineParser parser = new EngineParser(new CommonTokenStream(lexer));
+        parser.icaro(this, inflater, VistaUI);
 
-        } catch (Exception e) {
-            Log.e("Icaro", "Error en ejecucion task principal");
-            Log.e("Icaro", Log.getStackTraceString(e));
-        }
-        Toast.makeText(this, "ejecucion task principal correcta", Toast.LENGTH_SHORT).show();
+
     }
 }

@@ -15,14 +15,14 @@ icaro       :   funcion
 funcion     :   clima
             ;
 
-clima       :   PETICION? ARTICULO CLIMA
+clima       :   (PETICION)? (ARTICULO) CLIMA
                     {
                         Clima clima = new Clima(mActivity, mInflater, mView);
                     	clima.mostrarClima();
                     	Log.d("Icaro", "IcaroEngine: Peticion clima");
                     }
 
-            |   PETICION? ARTICULO CLIMA PREPOSICION (id=lugar)
+            |   (PETICION)? (ARTICULO) CLIMA (PREPOSICION) (id=lugar)
                     {
                         Clima clima = new Clima(mActivity, mInflater, mView);
                     	clima.mostrarClima($id.text);

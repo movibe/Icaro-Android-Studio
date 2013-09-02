@@ -33,12 +33,15 @@ public class Clima {
     }
 
     public void mostrarClima() {
+
         Toast.makeText(mActivity, "hola, este es un toast de clima", Toast.LENGTH_LONG).show();
+
 
     }
 
     public void mostrarClima(String ubicacion) {
-        Toast.makeText(mActivity, "hola, este es un toast de clima con ubicacion", Toast.LENGTH_LONG).show();
+
+        Toast.makeText(mActivity.getBaseContext(), "hola, este es un toast de clima con lugar", Toast.LENGTH_LONG).show();
 
     }
 }
