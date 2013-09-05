@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import m.zapata.icaro.MainActivity;
@@ -16,6 +17,9 @@ public class Clima {
     Activity mActivity;
     LayoutInflater mInflater;
     View mVistaUI;
+
+    ImageView iconoClima;
+
 
     public Clima(Activity mActivity, LayoutInflater mInflater, View mVistaUI) {
         this.mActivity = mActivity;
@@ -30,13 +34,14 @@ public class Clima {
         interfazPadre.addView(interfazUsuario, index);
         MainActivity.VistaUI = interfazUsuario;
 
+        iconoClima = (ImageView) mActivity.findViewById(R.id.image_iconoClima);
+
     }
 
     public void mostrarClima() {
 
-        Toast.makeText(mActivity, "hola, este es un toast de clima", Toast.LENGTH_LONG).show();
 
-
+        Toast.makeText(mActivity, "hola, este es pequeño un toast de clima", Toast.LENGTH_LONG).show();
     }
 
     public void mostrarClima(String ubicacion) {

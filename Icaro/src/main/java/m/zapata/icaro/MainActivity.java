@@ -190,8 +190,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     }
 
     private void ejecutarEngine(String peticion) {
-        LayoutInflater inflater;
-        inflater = getLayoutInflater();
+        LayoutInflater inflater = getLayoutInflater();
 
         peticion.toLowerCase();
         peticion = Normalizer.normalize(peticion, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
@@ -199,7 +198,5 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         EngineLexer lexer = new EngineLexer(new ANTLRInputStream(peticion));
         EngineParser parser = new EngineParser(new CommonTokenStream(lexer));
         parser.icaro(this, inflater, VistaUI);
-
-
     }
 }

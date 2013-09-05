@@ -16,3 +16,31 @@ public class IcaroEngineParser extends Parser {
 		mActivity = mainActivity;
 		mInflater = inflater;
 		mView = view;
+
+
+
+
+----------------------------------------------------------------------------------------------------
+
+Color celeste
+
+*** Primary Color:
+
+   var. 1 = #016D7C = rgb(1,109,124)
+   var. 2 = #18545C = rgb(24,84,92)
+   var. 3 = #00464F = rgb(0,70,79)
+   var. 4 = #1F99AA = rgb(31,153,170)
+   var. 5 = #379CAA = rgb(55,156,170)
+
+
+----------------------------------------------------------------------------------------------------
+
+Color Blanco
+
+*** Primary Color:
+
+   var. 1 = #F2F2F2 = rgb(242,242,242)
+   var. 2 = #E2E2E2 = rgb(226,226,226)
+   var. 3 = #BDCEDB = rgb(189,206,219)
+   var. 4 = #FFFFFF = rgb(255,255,255)
+   var. 5 = #FFFFFF = rgb(255,255,255)

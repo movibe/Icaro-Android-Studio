@@ -12,6 +12,9 @@
         Commons.
     </string>
 
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="humedad">Hum</string>
 
     <string name="action_settings">Ajustes</string>
     <string name="acerca_de">Acerca de</string>
