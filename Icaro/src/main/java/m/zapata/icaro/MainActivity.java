@@ -30,6 +30,8 @@ import IcaroEngine.EngineParser;
 
 public class MainActivity extends Activity implements TextToSpeech.OnInitListener {
 
+    //TODO: Manejo de excepciones para acceso a internet
+
     Locale Español = new Locale("spa");
 
     private static final int REQUEST_CODE = 1000;

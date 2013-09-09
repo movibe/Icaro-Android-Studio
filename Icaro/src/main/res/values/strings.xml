@@ -47,4 +47,6 @@
         Google
     </string>
 
+    <string name="error_datos">Lo lamento, hubo un error descargando los datos</string>
+
 </resources>
