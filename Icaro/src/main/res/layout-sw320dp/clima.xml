@@ -3,7 +3,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:id="@+id/layout_clima">
 
     <TextView
         android:layout_width="match_parent"
@@ -21,15 +22,16 @@
         android:textColor="#017E90" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Nubosidad Parcial"
         android:id="@+id/t_EstadoClima"
-        android:textSize="32dp"
+        android:textSize="30dp"
         android:layout_below="@+id/t_Temperatura"
         android:layout_centerHorizontal="true"
-        android:textColor="#18545C" />
+        android:textColor="#18545C"
+        android:gravity="center" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -50,7 +52,7 @@
         android:text="La Serena"
         android:id="@+id/t_Ciudad"
         android:singleLine="false"
-        android:textSize="35dp"
+        android:textSize="30dp"
         android:layout_above="@+id/t_Pais"
         android:layout_centerHorizontal="true"
         android:textColor="#1F99AA" />
@@ -62,7 +64,7 @@
         android:id="@+id/t_Pais"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textColor="#00464F" />
 
     <TextView
@@ -109,7 +111,7 @@
         android:layout_height="wrap_content"
         android:text="@string/min"
         android:id="@+id/t_TempMin"
-        android:textSize="23dp"
+        android:textSize="20dp"
         android:textColor="#016D7C"
         android:layout_below="@+id/t_EstadoClima"
         android:layout_alignParentLeft="true"
@@ -121,7 +123,7 @@
         android:layout_height="wrap_content"
         android:text="@string/max"
         android:id="@+id/t_TempMax"
-        android:textSize="23dp"
+        android:textSize="20dp"
         android:textColor="#016D7C"
         android:layout_below="@+id/t_EstadoClima"
         android:layout_centerHorizontal="true"
@@ -132,7 +134,7 @@
         android:layout_height="wrap_content"
         android:text="@string/humedad"
         android:id="@+id/t_Hum"
-        android:textSize="23dp"
+        android:textSize="20dp"
         android:textColor="#016D7C"
         android:layout_below="@+id/t_EstadoClima"
         android:layout_alignParentRight="true"

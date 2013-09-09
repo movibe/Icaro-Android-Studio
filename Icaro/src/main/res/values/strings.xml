@@ -8,8 +8,8 @@
     <string name="desarrollado_por">Desarrollado por Miguel A. Zapata</string>
     <string name="mail">miguelo.zapata@gmail.com</string>
     <string name="twitter">http://www.twitter.com/Miguelost</string>
-    <string name="comentario_version">Licencia GNU General Public License, version 2 y Creative
-        Commons.
+    <string name="comentario_version">Con licencia "GNU General Public License version 2" y
+        "Creative Commons".
     </string>
 
     <string name="min">Min</string>
@@ -40,13 +40,13 @@
 
     <string name="error_tts">Lo lamento, ha fallado el reconocimiento =(</string>
     <string name="error_audio">Lo lamento, ha ocurrido un error con el audio capturado</string>
-    <string name="error_audio_red_datos">Lo lamento, hay problemas en la red de datos o WIFI de su
+    <string name="error_red_datos">Lo lamento, hay problemas en la red de datos o WIFI de su
         dispositivo
     </string>
     <string name="error_audio_servidor">Lo lamento, hay problemas con el acceso a los servidores de
         Google
     </string>
-
-    <string name="error_datos">Lo lamento, hubo un error descargando los datos</string>
+    <string name="error_parser">Hubo un error leyendo los datos descargados, intente nuevamente
+    </string>
 
 </resources>

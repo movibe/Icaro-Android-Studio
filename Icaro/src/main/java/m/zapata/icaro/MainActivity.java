@@ -162,7 +162,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
         if (resultCode == RecognizerIntent.RESULT_NETWORK_ERROR) {
             Log.e("Icaro", "Network Error");
-            Toast.makeText(this, R.string.error_audio_red_datos, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.error_red_datos, Toast.LENGTH_LONG).show();
         }
 
         if (resultCode == RecognizerIntent.RESULT_SERVER_ERROR) {

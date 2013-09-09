@@ -57,12 +57,18 @@
             android:text="@string/comentario_version"
             android:id="@+id/t_Comentario"
             android:singleLine="false"
-            android:textSize="14dp"
-            android:textStyle="italic"
+        android:textSize="10dp"
+        android:textStyle="italic"
             android:gravity="center"
             android:layout_marginBottom="68dp"
             android:layout_above="@+id/t_Build"
-            android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="false"
+        android:textAlignment="center"
+        android:typeface="monospace" />
 
     <TextView
             android:layout_width="match_parent"
@@ -72,7 +78,8 @@
             android:textSize="14dp"
             android:gravity="center"
             android:layout_alignRight="@+id/t_Version"
-            android:layout_below="@+id/t_NombreDesarrollador"/>
+        android:layout_below="@+id/t_NombreDesarrollador"
+        android:autoLink="email" />
 
     <TextView
             android:layout_width="match_parent"
@@ -94,6 +101,8 @@
             android:id="@+id/t_Twitter"
             android:layout_below="@+id/t_Mail"
             android:layout_centerHorizontal="true"
-            android:textSize="14dp"/>
+        android:textSize="14dp"
+        android:autoLink="web"
+        android:textIsSelectable="false" />
 
 </RelativeLayout>
