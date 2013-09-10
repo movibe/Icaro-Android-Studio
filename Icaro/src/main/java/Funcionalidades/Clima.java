@@ -23,9 +23,8 @@ import m.zapata.icaro.R;
 
 /**
  * Created by miguelo on 31-08-13.
- *
+ * <p/>
  * Acceso a API Open Weather Map
- *
  */
 public class Clima {
     Activity mActivity;
@@ -53,7 +52,6 @@ public class Clima {
     String _pais;
 
 
-
     public Clima(Activity mActivity, LayoutInflater mInflater, View mVistaUI) {
         this.mActivity = mActivity;
         this.mInflater = mInflater;
@@ -64,7 +62,6 @@ public class Clima {
         int index = interfazPadre.indexOfChild(interfazUsuario);
         interfazPadre.removeView(interfazUsuario);
         interfazUsuario = mInflater.inflate(R.layout.clima, interfazPadre, false);
-        //interfazUsuario.setVisibility(View.GONE);
         interfazPadre.addView(interfazUsuario, index);
         MainActivity.VistaUI = interfazUsuario;
 
@@ -162,7 +159,6 @@ public class Clima {
                 pais.setText(_pais);
 
                 pDialog.dismiss();
-                //MainActivity.VistaUI.setVisibility(View.VISIBLE);
                 climaLayout.setVisibility(View.VISIBLE);
             }
 

@@ -49,4 +49,6 @@
     <string name="error_parser">Hubo un error leyendo los datos descargados, intente nuevamente
     </string>
 
+    <string name="sin_red">No hay conectividad de red para realizar la peticin</string>
+
 </resources>

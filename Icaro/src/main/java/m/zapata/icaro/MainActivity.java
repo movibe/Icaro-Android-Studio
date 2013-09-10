@@ -3,8 +3,11 @@ package m.zapata.icaro;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
@@ -30,10 +33,9 @@ import IcaroEngine.EngineParser;
 
 public class MainActivity extends Activity implements TextToSpeech.OnInitListener {
 
-    //TODO: Manejo de excepciones para acceso a internet
-
     Locale Español = new Locale("spa");
 
+    boolean networkStatus = false;
     private static final int REQUEST_CODE = 1000;
     private static final int VOICE_DATA_CHECK_CODE = 0;
 
@@ -192,13 +194,20 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     }
 
     private void ejecutarEngine(String peticion) {
-        LayoutInflater inflater = getLayoutInflater();
 
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo estadoRed = cm.getActiveNetworkInfo();
+
+        if (estadoRed != null && estadoRed.isConnectedOrConnecting()) {
+            networkStatus = true;
+        } else networkStatus = false;
+
+        LayoutInflater inflater = getLayoutInflater();
         peticion.toLowerCase();
         peticion = Normalizer.normalize(peticion, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
 
         EngineLexer lexer = new EngineLexer(new ANTLRInputStream(peticion));
         EngineParser parser = new EngineParser(new CommonTokenStream(lexer));
-        parser.icaro(this, inflater, VistaUI);
+        parser.icaro(this, inflater, VistaUI, networkStatus);
     }
 }

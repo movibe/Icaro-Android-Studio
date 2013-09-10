@@ -17,16 +17,28 @@ funcion     :   clima
 
 clima       :   (PETICION)? (ARTICULO) CLIMA
                     {
-                        Clima clima = new Clima(mActivity, mInflater, mView);
-                    	clima.mostrarClima();
-                    	Log.d("Icaro", "IcaroEngine: Peticion clima");
+                        if (networkStatus == true) {
+                            Clima clima = new Clima(mActivity, mInflater, mView);
+                           	clima.mostrarClima();
+                            Log.d("Icaro", "IcaroEngine: Peticion clima");
+
+                        } else {
+                            layout.setVisibility(View.INVISIBLE);
+                            Toast.makeText(activity, R.string.sin_red, Toast.LENGTH_LONG).show();
+                        }
                     }
 
             |   (PETICION)? (ARTICULO) CLIMA (PREPOSICION) (id=lugar)
                     {
-                        Clima clima = new Clima(mActivity, mInflater, mView);
-                    	clima.mostrarClima($id.text);
-                    	Log.d("Icaro", "IcaroEngine: Peticion clima en "+$id.text);
+                        if (networkStatus == true) {
+                            Clima clima = new Clima(mActivity, mInflater, mView);
+                    	    clima.mostrarClima($id.text);
+                    	    Log.d("Icaro", "IcaroEngine: Peticion clima en "+$id.text);
+                    	} else {
+                    	    layout.setVisibility(View.INVISIBLE);
+                            Toast.makeText(activity, R.string.sin_red, Toast.LENGTH_LONG).show();
+                        }
+
                     }
             ;
 
