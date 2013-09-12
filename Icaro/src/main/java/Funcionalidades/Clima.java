@@ -43,6 +43,7 @@ public class Clima {
     TextView ciudad;
     TextView pais;
 
+
     int _temperatura;
     int _tempMin;
     int _tempMax;
@@ -50,6 +51,7 @@ public class Clima {
     String _estadoClima;
     String _ciudad;
     String _pais;
+    String _codigoIcono;
 
 
     public Clima(Activity mActivity, LayoutInflater mInflater, View mVistaUI) {
@@ -129,6 +131,7 @@ public class Clima {
                     //velocidadViento = resultado.getJSONObject("wind").getString("speed");
                     _ciudad = resultadoJSON.getString("name");
                     _pais = resultadoJSON.getJSONObject("sys").getString("country");
+                    _codigoIcono = resultadoJSON.getJSONArray("weather").getJSONObject(0).getString("icon");
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -148,29 +151,59 @@ public class Clima {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
 
-            if (error == 0) {
-                estadoClima.setText(_estadoClima.toUpperCase());
-                temperatura.setText(_temperatura + "º");
-                tempMin.setText(_tempMin + "º");
-                tempMax.setText(_tempMax + "º");
-                humedad.setText(_humedad + "%");
-                //vientoValue.setText(velocidadViento+" kmh");
-                ciudad.setText(_ciudad);
-                pais.setText(_pais);
+            switch (error) {
+                case 0:
+                    estadoClima.setText(_estadoClima.toUpperCase());
+                    temperatura.setText(_temperatura + "º");
+                    tempMin.setText(_tempMin + "º");
+                    tempMax.setText(_tempMax + "º");
+                    humedad.setText(_humedad + "%");
+                    //vientoValue.setText(velocidadViento+" kmh");
+                    ciudad.setText(_ciudad);
+                    pais.setText(_pais);
 
-                pDialog.dismiss();
-                climaLayout.setVisibility(View.VISIBLE);
+                    pDialog.dismiss();
+                    climaLayout.setVisibility(View.VISIBLE);
+                    break;
+                case 1:
+                    pDialog.dismiss();
+                    Toast.makeText(mActivity, R.string.error_parser, Toast.LENGTH_LONG).show();
+                    break;
+                case 2:
+                    pDialog.dismiss();
+                    Toast.makeText(mActivity, R.string.error_red_datos, Toast.LENGTH_LONG).show();
+                    break;
             }
 
-            if (error == 1) {
-                pDialog.dismiss();
-                Toast.makeText(mActivity, R.string.error_parser, Toast.LENGTH_LONG).show();
+            if (_codigoIcono.equals("01d") || _codigoIcono.equals("01n")) {   //sky clear - despejado
+                iconoClima.setImageResource(R.raw.soleado);
+            }
+            if (_codigoIcono.equals("02d") || _codigoIcono.equals("02n")) {  //few clouds - pocas nubes
+                iconoClima.setImageResource(R.raw.nubosidad_parcial);
+            }
+            if (_codigoIcono.equals("03d") || _codigoIcono.equals("03n")) {  //scattered clouds - nubes entrelazadas
+                iconoClima.setImageResource(R.raw.nubes);
+            }
+            if (_codigoIcono.equals("04d") || _codigoIcono.equals("04n")) {  //broken clouds - nublado
+                iconoClima.setImageResource(R.raw.nubes);
+            }
+            if (_codigoIcono.equals("09d") || _codigoIcono.equals("09n")) {  //shower rain - llovizna
+                iconoClima.setImageResource(R.raw.llovizna);
+            }
+            if (_codigoIcono.equals("10d") || _codigoIcono.equals("10n")) {  //rain - lluvia
+                iconoClima.setImageResource(R.raw.lluvia);
+            }
+            if (_codigoIcono.equals("11d") || _codigoIcono.equals("11n")) {  //thunderstorm - tormenta
+                iconoClima.setImageResource(R.raw.tormenta);
+            }
+            if (_codigoIcono.equals("13d") || _codigoIcono.equals("13n")) {  //snow - nieve
+                iconoClima.setImageResource(R.raw.nieve);
+            }
+            if (_codigoIcono.equals("50d") || _codigoIcono.equals("50n")) {  //mist - neblina
+                iconoClima.setImageResource(R.raw.neblina);
             }
 
-            if (error == 2) {
-                pDialog.dismiss();
-                Toast.makeText(mActivity, R.string.error_red_datos, Toast.LENGTH_LONG).show();
-            }
+
         }
     }
 }

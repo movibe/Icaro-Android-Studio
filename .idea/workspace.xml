@@ -40,14 +40,12 @@
       </layout>
     </layouts>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f985e394-990f-44d3-9440-ffd8a80e6f16" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/ResultadoAsyncTask.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Clima.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Clima.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Icaro.iws" />
@@ -72,6 +70,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -108,7 +107,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -123,24 +121,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="12" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-3.981752" vertical-offset="2317" max-vertical-offset="2865">
-              <folding>
-                <element signature="e#4481#4924#0" expanded="true" />
-                <element signature="e#4897#4898#0" expanded="true" />
-                <element signature="e#5640#5644#0" expanded="true" />
-                <element signature="e#5842#5846#0" expanded="true" />
-                <element signature="e#6047#6051#0" expanded="true" />
-                <element signature="e#6254#6258#0" expanded="true" />
-                <element signature="e#6695#6699#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Engine.g4" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="28" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1125">
+            <state line="49" column="0" selection-start="1432" selection-end="1432" vertical-scroll-proportion="-3.5195532" vertical-offset="2205" max-vertical-offset="2805">
               <folding />
             </state>
           </provider>
@@ -149,8 +130,11 @@
       <file leaf-file-name="Clima.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Clima.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="0" selection-start="5745" selection-end="5745" vertical-scroll-proportion="0.0" vertical-offset="1235" max-vertical-offset="2490">
-              <folding />
+            <state line="201" column="92" selection-start="7915" selection-end="7915" vertical-scroll-proportion="0.0" vertical-offset="2283" max-vertical-offset="2955">
+              <folding>
+                <element signature="e#6126#6135#0" expanded="true" />
+                <element signature="e#6312#6321#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -252,8 +236,8 @@
         <option value="$PROJECT_DIR$/Icaro/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/Icaro/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" />
-        <option value="$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Clima.java" />
         <option value="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" />
+        <option value="$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Clima.java" />
       </list>
     </option>
   </component>
@@ -311,7 +295,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -575,19 +558,20 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Project" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="76" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="135" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="135" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="82" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Dropbox/Bit 01/Recursos/antlr-4.0-complete.jar!/" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="169" />
@@ -604,8 +588,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="314" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
@@ -861,7 +845,11 @@
       <created>1378756774877</created>
       <updated>1378756774877</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Clima: Eliminado codigo innesesario &#10;&#10;Engine.g4&#10;-Agregado nuevo parametro para controlar acceso a internet de funcionalidades&#10;&#10;MainActivity:&#10;-Agregado codigo para saber estado de red&#10;&#10;ResultadoAsyncTask: &#10;-Se elimina por no uso&#10;&#10;&#10;Otros:&#10;-Agregado y modificado nuevos strings&#10;-Agregado nuevo permiso para estado de red&#10;&#10;&#10;&#10;">
+      <created>1378780501705</created>
+      <updated>1378780501705</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -898,21 +886,21 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.728988" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24695122" sideWeight="0.46483704" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30756578" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.87135506" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.6798623" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32761577" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.6798623" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24695122" sideWeight="0.6912522" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24695122" sideWeight="0.12864494" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33790737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3620427" sideWeight="0.6712329" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30756578" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -942,7 +930,8 @@
     <MESSAGE value="Eliminado BackgroundTask, realizar futura implementacion mas adelante" />
     <MESSAGE value="Terminada implementacion de Asynctask en metodo clima, con arreglo en metodos.&#10;Falta terminar detalles de implementacion, agregar icono y algunas optimizaciones." />
     <MESSAGE value="Implementado mensajes de excepcion&#10;Correccion de errores&#10;Ediciones en layout Acerca de y en layout Clima" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementado mensajes de excepcion&#10;Correccion de errores&#10;Ediciones en layout Acerca de y en layout Clima" />
+    <MESSAGE value="Clima: Eliminado codigo innesesario &#10;&#10;Engine.g4&#10;-Agregado nuevo parametro para controlar acceso a internet de funcionalidades&#10;&#10;MainActivity:&#10;-Agregado codigo para saber estado de red&#10;&#10;ResultadoAsyncTask: &#10;-Se elimina por no uso&#10;&#10;&#10;Otros:&#10;-Agregado y modificado nuevos strings&#10;-Agregado nuevo permiso para estado de red&#10;&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clima: Eliminado codigo innesesario &#10;&#10;Engine.g4&#10;-Agregado nuevo parametro para controlar acceso a internet de funcionalidades&#10;&#10;MainActivity:&#10;-Agregado codigo para saber estado de red&#10;&#10;ResultadoAsyncTask: &#10;-Se elimina por no uso&#10;&#10;&#10;Otros:&#10;-Agregado y modificado nuevos strings&#10;-Agregado nuevo permiso para estado de red&#10;&#10;&#10;&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -951,11 +940,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineBaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="54" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="24" selection-start="448" selection-end="448" vertical-scroll-proportion="1.054054" vertical-offset="0" max-vertical-offset="525" />
@@ -971,30 +955,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/raw/nubosidad_parcial.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/JSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="30" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/Dialogo_AcercaDe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.13636364" vertical-offset="0" max-vertical-offset="550">
-          <folding />
-        </state>
+        <state line="8" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.13636364" vertical-offset="0" max-vertical-offset="550" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Configuracion">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="19" selection-start="686" selection-end="693" vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="31" column="19" selection-start="686" selection-end="693" vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/acerca_de.xml">
@@ -1038,6 +1006,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/raw/nubes.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/raw/nubosidad_parcial.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/raw/neblina.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="42" selection-start="1686" selection-end="1686" vertical-scroll-proportion="1.0909091" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Clima.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="92" selection-start="7915" selection-end="7915" vertical-scroll-proportion="0.0" vertical-offset="2283" max-vertical-offset="2955">
+          <folding>
+            <element signature="e#6126#6135#0" expanded="true" />
+            <element signature="e#6312#6321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="28" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1125">
@@ -1045,25 +1045,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Clima.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="0" selection-start="5745" selection-end="5745" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2490">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="12" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-3.981752" vertical-offset="2317" max-vertical-offset="2865">
-          <folding>
-            <element signature="e#4481#4924#0" expanded="true" />
-            <element signature="e#4897#4898#0" expanded="true" />
-            <element signature="e#5640#5644#0" expanded="true" />
-            <element signature="e#5842#5846#0" expanded="true" />
-            <element signature="e#6047#6051#0" expanded="true" />
-            <element signature="e#6254#6258#0" expanded="true" />
-            <element signature="e#6695#6699#0" expanded="true" />
-          </folding>
+        <state line="49" column="0" selection-start="1432" selection-end="1432" vertical-scroll-proportion="-3.5195532" vertical-offset="2205" max-vertical-offset="2805">
+          <folding />
         </state>
       </provider>
     </entry>
