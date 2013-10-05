@@ -42,8 +42,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f985e394-990f-44d3-9440-ffd8a80e6f16" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/Icaro.iml" afterPath="$PROJECT_DIR$/Icaro/Icaro.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Proyecto Icaro.iml" afterPath="$PROJECT_DIR$/Proyecto Icaro.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.tokens" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineBaseListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineLexer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineLexer.tokens" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/GoogleAdMobAdsSdk_6_4_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Icaro.iws" />
@@ -116,10 +121,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="0" selection-start="2792" selection-end="2792" vertical-scroll-proportion="-2.6" vertical-offset="2315" max-vertical-offset="2865">
+            <state line="87" column="0" selection-start="2792" selection-end="2792" vertical-scroll-proportion="0.0" vertical-offset="2315" max-vertical-offset="2865">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EngineLexer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineLexer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="442" selection-end="442" vertical-scroll-proportion="0.2924791" vertical-offset="0" max-vertical-offset="1455">
               <folding />
             </state>
           </provider>
@@ -896,7 +910,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="preferences.pathVariables" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="OBS4GMLJJ7WKEYJF" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -1179,7 +1193,11 @@
       <created>1378994991899</created>
       <updated>1378994991899</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="commit de respaldo&#10;&#10;">
+      <created>1380925967037</created>
+      <updated>1380925967037</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1204,7 +1222,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="26" width="1368" height="743" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8044597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1219,11 +1237,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30756578" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.87135506" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.6798623" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32761577" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32761577" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.6798623" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24695122" sideWeight="0.12864494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24695122" sideWeight="0.6723842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33790737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1262,7 +1280,8 @@
     <MESSAGE value="Implementado mensajes de excepcion&#10;Correccion de errores&#10;Ediciones en layout Acerca de y en layout Clima" />
     <MESSAGE value="Clima: Eliminado codigo innesesario &#10;&#10;Engine.g4&#10;-Agregado nuevo parametro para controlar acceso a internet de funcionalidades&#10;&#10;MainActivity:&#10;-Agregado codigo para saber estado de red&#10;&#10;ResultadoAsyncTask: &#10;-Se elimina por no uso&#10;&#10;&#10;Otros:&#10;-Agregado y modificado nuevos strings&#10;-Agregado nuevo permiso para estado de red&#10;&#10;&#10;&#10;" />
     <MESSAGE value="Clima.java:&#10;- Agregado codigo para obtener codigo de icono.&#10;- modificado IF error por SWITCH&#10;- agregado codigo para mostrar iconos de clima&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clima.java:&#10;- Agregado codigo para obtener codigo de icono.&#10;- modificado IF error por SWITCH&#10;- agregado codigo para mostrar iconos de clima&#10;&#10;" />
+    <MESSAGE value="commit de respaldo&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit de respaldo&#10;&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1271,11 +1290,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Icaro/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="24" selection-start="448" selection-end="448" vertical-scroll-proportion="1.054054" vertical-offset="0" max-vertical-offset="525" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/activity_main.xml">
       <provider editor-type-id="text-editor">
         <state line="32" column="7" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="675">
@@ -1373,7 +1387,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="2792" selection-end="2792" vertical-scroll-proportion="-2.6" vertical-offset="2315" max-vertical-offset="2865">
+        <state line="87" column="0" selection-start="2792" selection-end="2792" vertical-scroll-proportion="0.0" vertical-offset="2315" max-vertical-offset="2865">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="442" selection-end="442" vertical-scroll-proportion="0.2924791" vertical-offset="0" max-vertical-offset="1455">
           <folding />
         </state>
       </provider>
