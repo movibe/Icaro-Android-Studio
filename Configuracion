@@ -32,6 +32,13 @@ Color celeste
    var. 4 = #1F99AA = rgb(31,153,170)
    var. 5 = #379CAA = rgb(55,156,170)
 
+   color primario UI            #017E90
+   color segundario UI          #18545C
+
+   color letras primaria        #016D7C
+   color letras segundarias     #00464F
+
+   celeste claro letras         #1F99AA
 
 ----------------------------------------------------------------------------------------------------
 

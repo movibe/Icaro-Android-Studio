@@ -12,7 +12,7 @@ grammar Engine;
 icaro       :   funcion
             ;
 
-funcion     :   clima
+funcion     :   clima | ubicacion
             ;
 
 clima       :   (PETICION)? (ARTICULO) CLIMA
@@ -38,7 +38,31 @@ clima       :   (PETICION)? (ARTICULO) CLIMA
                     	    layout.setVisibility(View.INVISIBLE);
                             Toast.makeText(activity, R.string.sin_red, Toast.LENGTH_LONG).show();
                         }
+                    }
+            ;
 
+ubicacion   :   (PETICION) (ADJETIVO) UBICACION
+                    {
+                        if (networkStatus == true) {                                                //cambiar restriccion red por gps
+                            Ubicacion ubicacion = new Ubicacion(mActivity, mInflater, mView);
+                            ubicacion.ubicacionActual();
+                            Log.d("Icaro", "IcaroEngine: Peticion ubicacion");
+                        } else {
+                            layout.setVisibility(View.INVISIBLE);
+                            Toast.makeText(activity, R.string.sin_red, Toast.LENGTH_LONG).show();
+                        }
+                    }
+
+            |   (PREGUNTA) UBICACION
+                    {
+                        if (networkStatus == true) {                                                //cambiar restriccion red por gps
+                            Ubicacion ubicacion = new Ubicacion(mActivity, mInflater, mView);
+                            ubicacion.ubicacionActual();
+                            Log.d("Icaro", "IcaroEngine: Peticion ubicacion");
+                        } else {
+                            layout.setVisibility(View.INVISIBLE);
+                            Toast.makeText(activity, R.string.sin_red, Toast.LENGTH_LONG).show();
+                        }
                     }
             ;
 
@@ -52,15 +76,23 @@ lugar		:	((STRING WS) | (STRING))+
 PETICION    :   'dime' | 'cual es' | 'necesito saber'
 			;
 
-ARTICULO	:   'el' | 'la' | 'los' | 'las' | 'un' | 'una' | 'unos' | 'unas'
+PREGUNTA    :   'donde'
+            ;
+
+ARTICULO	:   'el' | 'la'
+            ;
+
+PREPOSICION	:	'de' | 'en'
+			;
+
+ADJETIVO    :   'mi'
             ;
 
 CLIMA      	:   'clima' | 'temperatura' | 'tiempo'
             ;
 
-PREPOSICION	:	'de' | 'en' | 'sobre'
-			;
-
+UBICACION   :   'ubicacion' | 'estoy'                                                               //estoy puede cambiarse por otro token
+            ;
 
 STRING		:	('a'..'z'|'A'..'Z')+
 			;

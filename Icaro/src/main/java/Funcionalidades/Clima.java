@@ -23,9 +23,15 @@ import m.zapata.icaro.R;
 
 /**
  * Created by miguelo on 31-08-13.
- * <p/>
  * Acceso a API Open Weather Map
  */
+
+
+//todo: agregar velocidad viento
+//todo: agregar iconos nocturnos para clima
+//todo: arreglar y mejorar excepcion para NO conexion a internet
+//todo: cambiar api clima
+
 public class Clima {
     Activity mActivity;
     LayoutInflater mInflater;

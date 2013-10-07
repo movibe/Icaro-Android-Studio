@@ -33,6 +33,8 @@ import IcaroEngine.EngineParser;
 
 public class MainActivity extends Activity implements TextToSpeech.OnInitListener {
 
+    //todo: implementar capa de gestos
+
     Locale Español = new Locale("spa");
 
     boolean networkStatus = false;
