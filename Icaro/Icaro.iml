@@ -71,6 +71,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="support-v4-13.0.0" level="project" />
     <orderEntry type="library" exported="" name="antlr-4.0-complete" level="project" />
+    <orderEntry type="library" exported="" name="google-play-services" level="project" />
   </component>
 </module>
 

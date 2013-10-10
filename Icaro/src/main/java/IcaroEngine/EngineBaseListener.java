@@ -41,6 +41,14 @@ public class EngineBaseListener implements EngineListener {
     }
 
     @Override
+    public void enterUbicacion(EngineParser.UbicacionContext ctx) {
+    }
+
+    @Override
+    public void exitUbicacion(EngineParser.UbicacionContext ctx) {
+    }
+
+    @Override
     public void enterEveryRule(ParserRuleContext ctx) {
     }
 

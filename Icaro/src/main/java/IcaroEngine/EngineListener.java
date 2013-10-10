@@ -20,4 +20,8 @@ public interface EngineListener extends ParseTreeListener {
     void enterIcaro(EngineParser.IcaroContext ctx);
 
     void exitIcaro(EngineParser.IcaroContext ctx);
+
+    void enterUbicacion(EngineParser.UbicacionContext ctx);
+
+    void exitUbicacion(EngineParser.UbicacionContext ctx);
 }

@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="antlr-4.0-complete">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Icaro/antlr-4.0-complete.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Icaro/antlr-4.0-complete.jar!/" />
       <root url="jar://$PROJECT_DIR$/Icaro/libs/antlr-4.0-complete.jar!/" />
     </CLASSES>
     <JAVADOC />

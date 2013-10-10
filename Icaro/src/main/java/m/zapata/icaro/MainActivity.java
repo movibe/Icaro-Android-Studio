@@ -1,7 +1,6 @@
 package m.zapata.icaro;
 
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,6 +10,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -31,13 +31,14 @@ import java.util.Locale;
 import IcaroEngine.EngineLexer;
 import IcaroEngine.EngineParser;
 
-public class MainActivity extends Activity implements TextToSpeech.OnInitListener {
+public class MainActivity extends FragmentActivity implements TextToSpeech.OnInitListener {
 
     //todo: implementar capa de gestos
+    //todo: cambiar excepcion sin red, agregar layout con imagen sin red y llamarlo desde clase error
 
     Locale Español = new Locale("spa");
 
-    boolean networkStatus = false;
+    boolean estadoRed = false;
     private static final int REQUEST_CODE = 1000;
     private static final int VOICE_DATA_CHECK_CODE = 0;
 
@@ -50,10 +51,9 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        VistaUI = findViewById(R.id.VistaUI);
+        //VistaUI = findViewById(R.id.VistaUI);
         peticionIngresada = (TextView) findViewById(R.id.peticionIngresada);
         peticionIngresada.setVisibility(TextView.INVISIBLE);
-
     }
 
 
@@ -61,7 +61,6 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-
 
         final MenuItem menuBusqueda = menu.findItem(R.id.action_busqueda);
         SearchView searchView = (SearchView) menuBusqueda.getActionView();
@@ -198,18 +197,18 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     private void ejecutarEngine(String peticion) {
 
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo estadoRed = cm.getActiveNetworkInfo();
+        NetworkInfo Red = cm.getActiveNetworkInfo();
 
-        if (estadoRed != null && estadoRed.isConnectedOrConnecting()) {
-            networkStatus = true;
-        } else networkStatus = false;
+        if (Red != null && Red.isConnectedOrConnecting()) {
+            estadoRed = true;
+        } else estadoRed = false;
 
         LayoutInflater inflater = getLayoutInflater();
-        peticion.toLowerCase();
+
         peticion = Normalizer.normalize(peticion, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
 
-        EngineLexer lexer = new EngineLexer(new ANTLRInputStream(peticion));
+        EngineLexer lexer = new EngineLexer(new ANTLRInputStream(peticion.toLowerCase(Español)));
         EngineParser parser = new EngineParser(new CommonTokenStream(lexer));
-        parser.icaro(this, inflater, VistaUI, networkStatus);
+        parser.icaro(this, inflater, VistaUI, estadoRed);
     }
 }

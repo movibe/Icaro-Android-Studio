@@ -1,28 +1,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-            android:id="@+id/action_busqueda"
-            android:title="@string/busqueda"
-            android:icon="@drawable/action_search"
-            android:actionLayout="@layout/busqueda"
-            android:showAsAction="always|collapseActionView"
-            android:actionViewClass="android.widget.SearchView"/>
+        android:id="@+id/action_busqueda"
+        android:title="@string/busqueda"
+        android:icon="@drawable/action_search"
+        android:showAsAction="always|collapseActionView"
+        android:actionViewClass="android.widget.SearchView" />
 
     <item
-            android:id="@+id/action_microfono"
-            android:title="@string/microfono"
-            android:icon="@drawable/device_access_mic"
-            android:orderInCategory="99"
-            android:showAsAction="always"/>
+        android:id="@+id/action_microfono"
+        android:title="@string/microfono"
+        android:icon="@drawable/device_access_mic"
+        android:orderInCategory="99"
+        android:showAsAction="always" />
 
     <item
-            android:id="@+id/action_settings"
-            android:title="@string/action_settings"
-            android:orderInCategory="100"
-            android:showAsAction="never"/>
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
 
     <item
-            android:id="@+id/acerca_de"
-            android:title="@string/acerca_de"
-            android:orderInCategory="101"
-            android:showAsAction="never"/>
+        android:id="@+id/acerca_de"
+        android:title="@string/acerca_de"
+        android:orderInCategory="101"
+        android:showAsAction="never" />
 </menu>

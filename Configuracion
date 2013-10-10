@@ -1,3 +1,12 @@
+terminal
+    export CLASSPATH=".:/usr/local/lib/antlr-4.0-complete.jar:$CLASSPATH"
+    alias antlr4='java -jar /usr/local/lib/antlr-4.0-complete.jar'
+    alias grun='java org.antlr.v4.runtime.misc.TestRig'
+    cd /mnt/Datos/Archivos\ Personales/Documentos/Android\ Studio/Proyecto\ Icaro/Icaro/src/main/java/IcaroEngine/
+    antlr4 Engine.g4
+
+
+
 modelo base engine parser
 
 @SuppressWarnings({ "all", "warnings", "unchecked", "unused", "cast" })
@@ -5,6 +14,7 @@ public class IcaroEngineParser extends Parser {
 	Activity mActivity;
 	LayoutInflater mInflater;
 	View mView;
+	boolean networkStatus;
 
 	......
 	......
@@ -15,7 +25,8 @@ public class IcaroEngineParser extends Parser {
 
 		mActivity = mainActivity;
 		mInflater = inflater;
-		mView = view;
+		mView = vistaUI;
+		networkStatus = estadoRed;
 
 
 
