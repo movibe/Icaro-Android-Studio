@@ -45,33 +45,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f985e394-990f-44d3-9440-ffd8a80e6f16" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/libs/google-play-services.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Ubicacion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_play_services.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/ubicacion_actual.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/GoogleAdMobAdsSdk_6_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/g.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/busqueda.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw480dp/busqueda.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw600dp/busqueda.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw720dp/busqueda.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Configuracion" afterPath="$PROJECT_DIR$/Configuracion" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.tokens" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/Engine.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineBaseListener.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineBaseListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineLexer.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineLexer.tokens" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineLexer.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineListener.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineParser.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/IcaroEngine/EngineParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/Icaro.iml" afterPath="$PROJECT_DIR$/Icaro/Icaro.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" afterPath="$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/activity_main.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/res/layout-sw320dp/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/antlr_4_0_complete.xml" afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_0_complete.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/build.gradle" afterPath="$PROJECT_DIR$/Icaro/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Icaro/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/Icaro/src/main/res/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Icaro.iws" />
@@ -156,7 +129,7 @@
       <file leaf-file-name="Ubicacion.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Ubicacion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="29" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="735">
+            <state line="17" column="29" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -165,7 +138,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="42" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="3345">
+            <state line="33" column="42" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="3300">
               <folding />
             </state>
           </provider>
@@ -177,7 +150,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
+            <state line="10" column="13" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -198,7 +171,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Icaro/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="6" selection-start="582" selection-end="582" vertical-scroll-proportion="0.6618182" vertical-offset="71" max-vertical-offset="645">
+            <state line="27" column="50" selection-start="523" selection-end="523" vertical-scroll-proportion="0.6727273" vertical-offset="35" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -1266,7 +1239,11 @@
       <created>1381168174199</created>
       <updated>1381168174199</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="nuevos archivos agregados">
+      <created>1381374099865</created>
+      <updated>1381374099865</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <option name="createBranch" value="false" />
     <servers />
   </component>
@@ -1354,7 +1331,8 @@
     <MESSAGE value="commit de respaldo&#10;&#10;" />
     <MESSAGE value="Añadido archivos generados por ANTLR del Icaro Engine&#10;&#10;" />
     <MESSAGE value="Clima.java&#10;- Agregado nuevo elementos al TaskList &#10;&#10;Engine.g4&#10;- Agregada nueva estructura para peticiones de ubicacion actual&#10;&#10;MainActivity.java&#10;- Agregado nuevo elemento al TaskList&#10;&#10;String.xml&#10;- Corregido error ortografico&#10;&#10;Proyecto General&#10;- Agregado nuevo txt con lista de frases soportadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clima.java&#10;- Agregado nuevo elementos al TaskList &#10;&#10;Engine.g4&#10;- Agregada nueva estructura para peticiones de ubicacion actual&#10;&#10;MainActivity.java&#10;- Agregado nuevo elemento al TaskList&#10;&#10;String.xml&#10;- Corregido error ortografico&#10;&#10;Proyecto General&#10;- Agregado nuevo txt con lista de frases soportadas" />
+    <MESSAGE value="nuevos archivos agregados" />
+    <option name="LAST_COMMIT_MESSAGE" value="nuevos archivos agregados" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1435,7 +1413,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/Funcionalidades/Ubicacion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="29" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="600">
+        <state line="17" column="29" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
@@ -1445,7 +1423,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
+        <state line="10" column="13" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
@@ -1462,14 +1440,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/src/main/java/m/zapata/icaro/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="42" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2820">
+        <state line="33" column="42" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="3300">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Icaro/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="6" selection-start="582" selection-end="582" vertical-scroll-proportion="0.6618182" vertical-offset="71" max-vertical-offset="645">
+        <state line="27" column="50" selection-start="523" selection-end="523" vertical-scroll-proportion="0.6727273" vertical-offset="35" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
